@@ -14,4 +14,4 @@ class HelloWorld:
         return "Hello World, my message to you is " + msg
 
 hello = HelloWorld("look")
-print hello.helloWorld()
+#print hello.helloWorld()
