@@ -1,8 +1,17 @@
-#test = input ("Digite alguma coisa!\n>> ")
+class HelloWorld:
+    msg = ""
+ 
+    def __init__(self, msg):
+        self.msg = msg
 
-#if (test.isdigit()):
-    #print ("Apenas numeros...")
+    def helloWorld(self):
+        return "Hello World"
 
-#print ("voce digitou: " + test)
+    def sayHelloWorld(self):
+        return "Hello World, my message to you is " + self.msg
 
-print ("Hello!!!")
+    def saidHelloWorld(self, msg):
+        return "Hello World, my message to you is " + msg
+
+hello = HelloWorld("look")
+print hello.helloWorld()
