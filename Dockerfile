@@ -89,6 +89,9 @@ RUN pip install --upgrade pip \
 ###sudo nginx -t
 ###sudo service nginx restart
 
+# Testing...
+#RUN python -m unittest test_run
+
 # Expose the app port
 #EXPOSE ${WEB_PORT}
 EXPOSE 5000

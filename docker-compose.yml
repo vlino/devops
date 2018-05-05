@@ -1,5 +1,8 @@
 version: '2'
 services:
+  redis:
+    container_name: devops_redis
+    image: "redis:alpine"
   web:
     container_name: devops
     build: ../devops/
@@ -7,7 +10,6 @@ services:
      - "5000:5000"
     volumes:
      - ../devops/:/usr/src/devops
-  redis:
-    container_name: devops_redis
-    image: "redis:alpine"
+    depends_on:
+     - redis
 
