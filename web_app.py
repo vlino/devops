@@ -1,7 +1,9 @@
+import time
+import redis
+
 from flask import Flask
 app = Flask(__name__)
 
-import routes
+cache = redis.Redis(host='redis', port=6379)
 
-if __name__ == "__main__":
-    app.run(host='0.0.0.0')
+import routes

@@ -1,4 +1,2 @@
-DBUtils
-psycopg2
-MySQL-python
-requests
+flask
+redis

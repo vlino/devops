@@ -1,0 +1,13 @@
+version: '2'
+services:
+  web:
+    container_name: devops
+    build: ../devops/
+    ports:
+     - "5000:5000"
+    volumes:
+     - ../devops/:/usr/src/devops
+  redis:
+    container_name: devops_redis
+    image: "redis:alpine"
+
